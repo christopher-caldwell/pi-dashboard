@@ -1,0 +1,16 @@
+overwrite: true
+schema:
+  - http://localhost:5001/graphql:
+      headers:
+        Authorization: 'schema'
+generates:
+  src/interfaces/generated/index.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+    config:
+      scalars:
+        Date: Date
+      skipTypename: true
+      wrapEntireFieldDefinitions: true
+      entireFieldWrapperValue: T | (() => T | Promise<T>) | Promise<T> | Promise<import('./helpers').Unpacked<T>>[]
