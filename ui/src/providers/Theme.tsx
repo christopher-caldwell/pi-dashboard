@@ -29,24 +29,24 @@ const theme = createTheme({
   },
   typography: {
     h1: {
-      fontSize: 32,
-      margin: 0
+      // fontSize: 32,
+      // margin: 0
     },
     h2: {
-      fontSize: 24,
-      margin: 0
+      // fontSize: 24,
+      // margin: 0
     },
     h3: {
-      fontSize: 22,
-      margin: 0
+      // fontSize: 22,
+      // margin: 0
     },
     h4: {
-      fontSize: 20,
-      margin: 0
+      // fontSize: 20,
+      // margin: 0
     },
     h5: {
-      fontSize: 18,
-      margin: 0
+      // fontSize: 18,
+      // margin: 0
     }
   }
 })

@@ -6,6 +6,7 @@ export const CalendarSchema = `#graphql
   }
 
   type Event {
+    # Need end time
     time: String!
     title: String!
   }
