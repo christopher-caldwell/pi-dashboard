@@ -15,7 +15,7 @@ const Calendar: FC = () => {
     <Grid item xs={12}>
       <Box sx={{ display: 'flex' }}>
         {calendarDays.map(day => (
-          <Box sx={{ marginRight: '3vw' }}>
+          <Box sx={{ width: Math.floor(100 / calendarDays.length) + '%', marginRight: '2vw' }}>
             <CalendarDate key={day.dayOfMonth} {...day} />
             {day.events.map(event => (
               <CalendarEvent key={event.time} {...event} />

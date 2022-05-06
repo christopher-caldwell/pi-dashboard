@@ -8,7 +8,7 @@ import Calendar from '@/features/calendar'
 const App: FC = () => {
   return (
     <Grid container spacing={3} sx={{ padding: '1vw', justifyContent: 'space-between' }}>
-      <Grid item container xs={7}>
+      <Grid item container xs={8}>
         <Calendar />
       </Grid>
       <Grid item container xs={4}>
