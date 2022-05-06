@@ -1,0 +1,71 @@
+[
+  {
+    "kind": "calendar#event",
+    "etag": "\"3303188051772000\"",
+    "id": "981t6shup5nvh1emqedii86t88",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=OTgxdDZzaHVwNW52aDFlbXFlZGlpODZ0ODggY2FsZHdlbGw4ODE0QG0",
+    "created": "2022-05-03T15:54:33.000Z",
+    "updated": "2022-05-03T16:07:05.886Z",
+    "summary": "Flooring people fix holes",
+    "creator": {
+      "email": "caldwellvictoria23@gmail.com"
+    },
+    "organizer": {
+      "email": "caldwellvictoria23@gmail.com"
+    },
+    "start": {
+      "dateTime": "2022-05-06T12:00:00-05:00",
+      "timeZone": "America/Denver"
+    },
+    "end": {
+      "dateTime": "2022-05-06T17:00:00-05:00",
+      "timeZone": "America/Denver"
+    },
+    "iCalUID": "981t6shup5nvh1emqedii86t88@google.com",
+    "sequence": 0,
+    "attendees": [
+      {
+        "email": "caldwell8814@gmail.com",
+        "self": true,
+        "responseStatus": "accepted"
+      },
+      {
+        "email": "caldwellvictoria23@gmail.com",
+        "organizer": true,
+        "responseStatus": "accepted"
+      }
+    ],
+    "hangoutLink": "https://meet.google.com/nru-duqf-cqs",
+    "conferenceData": {
+      "createRequest": {
+        "requestId": "ih263ac645jjc349qhh5ocvv3k",
+        "conferenceSolutionKey": {
+          "type": "hangoutsMeet"
+        },
+        "status": {
+          "statusCode": "success"
+        }
+      },
+      "entryPoints": [
+        {
+          "entryPointType": "video",
+          "uri": "https://meet.google.com/nru-duqf-cqs",
+          "label": "meet.google.com/nru-duqf-cqs"
+        }
+      ],
+      "conferenceSolution": {
+        "key": {
+          "type": "hangoutsMeet"
+        },
+        "name": "Google Meet",
+        "iconUri": "https://fonts.gstatic.com/s/i/productlogos/meet_2020q4/v6/web-512dp/logo_meet_2020q4_color_2x_web_512dp.png"
+      },
+      "conferenceId": "nru-duqf-cqs"
+    },
+    "reminders": {
+      "useDefault": true
+    },
+    "eventType": "default"
+  }
+]

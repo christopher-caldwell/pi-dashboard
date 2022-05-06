@@ -1,20 +1,16 @@
 import { GraphQLScalarType } from 'graphql'
 
-export const DateScalar = new GraphQLScalarType({
+export const DateScalar = new GraphQLScalarType<Date, string>({
   name: 'Date',
   description: 'Date custom scalar type',
   // value from the client
   parseValue(value) {
-    console.log('parsing date')
-    return new Date(value)
+    if (typeof value !== 'string') throw new Error('[DateScalar]: Cannot parse non string')
+    return new Date(value as string)
   },
   // value sent to the client
-  serialize(value: Date) {
-    console.log('serializing date')
-    return value.toTimeString()
-  },
-  parseLiteral(node) {
-    console.log('literal', node)
-    return 'date'
+  serialize(parseValue) {
+    if (!(parseValue instanceof Date)) throw new Error('Not a Date')
+    return parseValue.toTimeString()
   }
 })
