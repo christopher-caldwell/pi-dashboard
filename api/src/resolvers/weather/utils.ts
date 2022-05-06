@@ -15,11 +15,12 @@ if (myLongitude === undefined) throw new Error('Longitude is not present in the 
  */
 export const preferredUnit: 'standard' | 'metric' | 'imperial' = 'imperial'
 
+// If you cannot get your lat and long, you can use this. Also, the Google Maps app will tell you if you have that installed.
 export const getLatAndLongFromZip = (zip: string) => {
   axios.get('https://api.promaptools.com/service/us/zip-lat-lng/get', {
     params: {
       zip,
-      // This key came from the website. Don't know if this is rotated, but this works today?
+      // This key does not seem to be sensitive. It came straight from their site
       key: '17o8dysaCDrgv1c'
     }
   })
