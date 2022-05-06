@@ -1,0 +1,10 @@
+query Calendar {
+  calendar {
+    dayOfMonth
+    dayOfWeek
+    events {
+      time
+      title
+    }
+  }
+}

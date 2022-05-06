@@ -1,0 +1,10 @@
+query Weather {
+  weather {
+    temp
+    high
+    low
+    city
+    description
+    iconUrl
+  }
+}
